@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Opal Haze</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <span>Opal Haze</span>
+  </header>
+
+  <nav>
+  <ul>
+    <li><a href="index.html">Welcome</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="collections.html">Collections</a></li>
+    <li><a href="sustainability.html">Sustainability</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="form.html" class="active">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+
+  <main>
+    <h1>Get in Touch</h1>
+    <p>We’d love to hear from you! Fill out the form below to contact Opal Haze.</p>
+
+    <form action="thanks.html" method="get">
+
+      <!-- Contact Information -->
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label> First Name*
+          <input type="text" name="fname" required>
+        </label>
+
+        <label> Last Name*
+          <input type="text" name="lname" required>
+        </label>
+
+        <label> Email*
+          <input type="email" name="email" required>
+        </label>
+
+        <label> Phone Number
+          <input type="tel" name="phone" placeholder="(123) 456-7890">
+        </label>
+      </fieldset>
+
+      <!-- Preferences -->
+      <fieldset>
+        <legend>Jewelry Preferences</legend>
+        <p>What types of pieces are you most interested in?</p>
+
+        <label>
+          <input type="checkbox" name="preference" value="rings"> Rings
+        </label>
+        <label>
+          <input type="checkbox" name="preference" value="necklaces"> Necklaces
+        </label>
+        <label>
+          <input type="checkbox" name="preference" value="earrings"> Earrings
+        </label>
+
+        <p>Do you prefer vintage or handmade styles?</p>
+        <label>
+          <input type="radio" name="style" value="vintage" checked> Vintage
+        </label>
+        <label>
+          <input type="radio" name="style" value="handmade"> Handmade
+        </label>
+      </fieldset>
+
+      <!-- Additional Details -->
+      <fieldset>
+        <legend>Additional Details</legend>
+
+        <label>How did you hear about us?
+          <select name="source">
+            <option value="instagram">Instagram</option>
+            <option value="friend">Friend Recommendation</option>
+            <option value="market">Local Market</option>
+          </select>
+        </label>
+
+        <label> Message
+          <textarea name="message" rows="4" placeholder="Write your message here..."></textarea>
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Submit" class="button">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Opal Haze Jewelry • All Rights Reserved • Jewelry & Thrift with Heart</p>
+  </footer>
+</body>
+
+</html>
