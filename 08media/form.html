@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Riley Kennington">
+  <meta name="description" content="Opal Haze Jewelry and Thrift - Contact Form">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opal Haze - Contact Form</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet"
+    type="text/css">
+
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="Opal Haze Logo" class="logo">
+    <span>Opal Haze Jewelry + Thrift</span>
+  </header>
+
+<nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="video.html">Our Purpose</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="form.html"class="active">Contact</a></li>
+        </ul>
+    </nav>
+  
+
+
+  <main>
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Fill out the form below and we’ll get back to you shortly.</p>
+
+    <form action="thanks.html" method="get">
+
+      <!-- Fieldset 1: Personal Information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label>Full Name*
+          <input type="text" name="name" required>
+        </label>
+
+        <label>Email Address*
+          <input type="email" name="email" required>
+        </label>
+
+        <label>Phone Number
+          <input type="tel" name="phone">
+        </label>
+      </fieldset>
+
+      <!-- Fieldset 2: Preferences -->
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <p>How did you hear about us?</p>
+        <label><input type="radio" name="source" value="social" required> Social Media</label>
+        <label><input type="radio" name="source" value="friend"> Friend</label>
+        <label><input type="radio" name="source" value="other"> Other</label>
+
+        <p>What are you interested in?</p>
+        <label><input type="checkbox" name="interest" value="jewelry"> Jewelry</label>
+        <label><input type="checkbox" name="interest" value="vintage"> Vintage Finds</label>
+        <label><input type="checkbox" name="interest" value="collab"> Collaboration</label>
+      </fieldset>
+
+      <!-- Fieldset 3: Message -->
+      <fieldset>
+        <legend>Your Message</legend>
+
+        <label>Select a Topic:
+          <select name="topic">
+            <option value="general">General Inquiry</option>
+            <option value="custom">Custom Work</option>
+            <option value="feedback">Feedback</option>
+          </select>
+        </label>
+
+        <label>Message*
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 <span>Opal Haze</span> • All Rights Reserved &bull; Jewelry &amp; Thrift with Heart</p>
+  </footer>
+</body>
+
+</html>
